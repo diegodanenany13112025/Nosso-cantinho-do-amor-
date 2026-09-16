@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Cantinho ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #07152b, #0d2342, #07152b);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .inicio {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .coracao {
+      font-size: 70px;
+      animation: pulsar 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin: 20px 0 10px;
+    }
+
+    .subtitulo {
+      font-size: 18px;
+      color: #b9d9ff;
+      margin-bottom: 35px;
+    }
+
+    button {
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #ffffff;
+      color: #09203d;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #conteudo {
+      display: none;
+      padding: 50px 20px;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .carta {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 25px;
+      line-height: 1.7;
+      text-align: left;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .data {
+      color: #9dccff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      padding: 30px;
+      color: #9fb9d6;
+    }
+
+    @keyframes pulsar {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.15);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="inicio" id="inicio">
+    <div class="coracao">💙</div>
+
+    <h1>Para o meu amor</h1>
+
+    <p class="subtitulo">
+      Uma pequena surpresa feita especialmente para você...
+    </p>
+
+    <button onclick="abrirSurpresa()">
+      Abrir minha surpresa ❤️
+    </button>
+  </div>
+
+
+  <div id="conteudo">
+
+    <section>
+      <h2>💙 Nossa história</h2>
+
+      <div class="carta">
+        <div class="data">13 de novembro de 2025</div>
+
+        <p>
+          Foi nesse dia que começou uma história muito especial
+          para nós dois. ❤️
+        </p>
+
+        <br>
+
+        <p>
+          E isso aqui é só uma pequena parte de tudo aquilo
+          que ainda quero viver ao seu lado.
+        </p>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>💌 Uma carta para você</h2>
+
+      <div class="carta">
+        <p>
+          Meu amor,
+        </p>
+
+        <br>
+
+        <p>
+          Eu fiz esse cantinho porque queria guardar aqui algumas
+          lembranças nossas e deixar registrado o quanto você é
+          importante para mim.
+        </p>
+
+        <br>
+
+        <p>
+          Ainda vamos colocar muitas fotos, cartas e momentos
+          nossos aqui. Essa é só a primeira página da nossa história. ❤️
+        </p>
+
+        <br>
+
+        <p>
+          Com amor,<br>
+          Diego 💙
+        </p>
+      </div>
+    </section>
+
+
+    <footer>
+      Feito com muito amor. ❤️
+    </footer>
+
+  </div>
+
+
+  <script>
+    function abrirSurpresa() {
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("conteudo").style.display = "block";
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
