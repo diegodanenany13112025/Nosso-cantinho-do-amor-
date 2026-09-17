@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -92,6 +93,24 @@
       margin-bottom: 15px;
     }
 
+    /* GALERIA DE FOTOS */
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 2px solid rgba(255,255,255,0.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
     footer {
       padding: 30px;
       color: #9fb9d6;
@@ -104,6 +123,16 @@
 
       50% {
         transform: scale(1.15);
+      }
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .galeria img {
+        height: 180px;
       }
     }
   </style>
@@ -135,9 +164,8 @@
         <div class="data">13 de novembro de 2025</div>
 
         <p>
-         dia 13/11/2025 Foi nesse dia que começou uma história muito especial
+          dia 13/11/2025 Foi nesse dia que começou uma história muito especial,
           o dia em que eu conheci o amor da minha vida, a minha nenany🥰
-      
         </p>
 
         <br>
@@ -151,23 +179,34 @@
 
 
     <section>
-      <h2>Uma carta para você💌
-      oiii minha mindui, primeiro eu quero te agradecer por vc estar 
-      cmg todos os dias, por me aturar, por cuidar de mim,
-      eu sou muito grato por tudo que vc fez por mim, e eu quis criar 
-      esse site pq eu gosto de te surpreender e eu sabia que vc iria gostar 
-      do site kkkk.
-      enfim amor, feliz 10 meses pra nos minha vida, eu te amo muito muito 
-      minha estrelinha❤️
-      vc é tudo pra mim amor, obrigado por estar cmg durante todo esse tempo.
-      e eu espero que o dia 13/11 se repita por muitos e muitos anos, pq vc é a pessoa 
-      que eu quero me casar e ter 7 filhas kkk🥰
-      obrigado por tudo minha vida, feliz aniversário de 10 meses 
-      eu te amo muito❤️🎉</h2>
+      <h2>💌 Uma carta para você</h2>
 
       <div class="carta">
+
         <p>
-          minha minduim 
+          oiii minha minduim, primeiro eu quero te agradecer por vc estar
+          cmg todos os dias, por me aturar, por cuidar de mim,
+          eu sou muito grato por tudo que vc fez por mim, e eu quis criar
+          esse site pq eu gosto de te surpreender e eu sabia que vc iria gostar
+          do site kkkk.<p>
+          enfim amor, feliz 10 meses pra nos minha vida, eu te amo muito muito
+          minha estrelinha❤️
+        </p>
+
+        <br>
+
+        <p> vc é tudo pra mim amor, obrigado por estar cmg durante todo esse tempo.
+          e eu espero que o dia 13/11 se repita por muitos e muitos anos,
+          pq vc é a pessoa que eu quero me casar e ter 7 filhas kkk🥰
+          
+        </p>obrigado por tudo minha vida, feliz aniversário de 10 meses.
+          eu te amo muito❤️🎉
+        </p>
+
+        <br>
+
+        <p>
+          minha minduim
         </p>
 
         <br>
@@ -175,7 +214,7 @@
         <p>
           Eu fiz esse cantinho porque queria guardar aqui algumas
           lembranças nossas e deixar registrado o quanto você é
-          importante para mim r o quanto eu te amo muito😘
+          importante para mim e o quanto eu te amo muito😘
         </p>
 
         <br>
@@ -189,8 +228,36 @@
 
         <p>
           Com amor,<br>
-         jusé da nenany para nenany do jusé☺️
+          jusé da nenany para nenany do jusé☺️
         </p>
+
+      </div>
+    </section>
+
+
+    <!-- NOSSAS FOTOS -->
+
+    <section>
+      <h2>📸 Nossos momentos ❤️</h2>
+
+      <div class="galeria">
+
+        <img src="IMG_20260626_155219826_HDR_AE.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260626_155311501_HDR.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260626_172431710_HDR.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260709_180555382_HDR.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260729_183328565_HDR.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260802_202826884_HDR_AE.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260915_165033038_HDR.jpg" alt="Nosso momento">
+        
+        <img src="IMG_20260915_165042786_HDR.jpg" alt="Nosso momento">
+
       </div>
     </section>
 
